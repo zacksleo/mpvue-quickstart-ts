@@ -1,0 +1,11 @@
+{
+  "name": "mpvue-quickstart-ts",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "mpvue quickstart for typescript",
+  "scripts": {
+  },
+  "devDependencies": {
+    "vue-cli": "^2.8.2"
+  }
+}
