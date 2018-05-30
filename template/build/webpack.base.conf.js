@@ -4,6 +4,7 @@ var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
 var MpvuePlugin = require('webpack-mpvue-asset-plugin')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var glob = require('glob')
 
 function resolve (dir) {
