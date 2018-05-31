@@ -1,8 +1,8 @@
 import { wxp as wx } from '@minapp/wx/wxp'
-import fly from 'flyio'
+var Fly = require("flyio/dist/npm/wx");
+var request = new Fly();
 
-const request = fly;
-const API_GATEWAY = 'https://wx.jgcjhg.com/dlkhgl/v1';
+const API_GATEWAY = 'https://xxx.com/api/v1';
 
 request.interceptors.request.use((request: any) => {
     wx.showNavigationBarLoading();
