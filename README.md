@@ -2,7 +2,10 @@
 
 使用 Typescript 快速开始 mpvue 开发
 
-> fork 自 [mpvue/mpvue-quickstart](https://github.com/mpvue/mpvue-quickstart)修改而来。
+```
+vue init zacksleo/mpvue-quickstart-ts my-project
+
+```
 
 ## 特性
 
@@ -22,6 +25,34 @@ $ npm install
 $ npm run dev
 ```
 
-更多详细文档请查阅 [quickstart](http://mpvue.com/mpvue/quickstart/)。
+## 注意事项
 
-bug 或者交流建议等请反馈到 [issues](https://github.com/zacksleo/mpvue-quickstart-ts/issues)。
+### 页面 Page
+
+如果页面中，没有使用到组件，此时仍需要使用 @Component 进行装饰，如
+
+```javascript
+@Component
+class Index extends Vue {
+}
+```
+
+### 组件Props默认值
+
+可使用属性定义的方式定义Props，并在其上方添加@Prop装饰，定义默认值，如
+
+```javascript
+  @Prop({ default: '1' })
+  text: string;
+```
+
+## 参考文档
+
++ [quickstart](http://mpvue.com/mpvue/quickstart/)
++ [Vue官方文档](https://cn.vuejs.org/v2/guide/)
++ [vue-class-component](https://github.com/vuejs/vue-class-component)
+
+## 参考项目
+
++ [mpvue/mpvue-quickstart](https://github.com/mpvue/mpvue-quickstart)
++ [WingGao/mpvue-ts-demo](https://github.com/WingGao/mpvue-ts-demo)

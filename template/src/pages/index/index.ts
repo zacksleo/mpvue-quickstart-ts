@@ -11,7 +11,7 @@ import CompB from '@/components/compb.vue' // mpvue目前只支持的单文件�
     }
 })
 
-class Index extends Vue {
+export default class extends Vue {
     motto: String = 'Hello World'
     userInfo: Object = {}
 
@@ -45,5 +45,3 @@ class Index extends Vue {
     }
 
 }
-
-export default Index

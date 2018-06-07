@@ -1,15 +1,11 @@
-import { Vue, Component, Prop } from 'vue-property-decorator'
+import { Vue, Component, Prop } from 'vue-property-decorator';
 
-const debug = require('debug')('log:Comp/CompB')
+const debug = require('debug')('log:Comp/CompB');
 
 // 必须使用装饰器的方式来指定component
-@Component({
-  // props: {
-  //   text: String
-  // }
-})
+@Component
 class CompB extends Vue {
-  @Prop({ default: '1' }) //注意用法！
+  @Prop({ default: '1' })
   text: string;
 
   ver: number = 2;
