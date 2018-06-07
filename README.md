@@ -45,6 +45,14 @@ class Index extends Vue {
   text: string;
 ```
 
+### 引入外部样式
+
+```html
+<style>
+@import "~weui-wxss/dist/style/weui.wxss";
+</style>
+```
+
 ## 参考文档
 
 + [quickstart](http://mpvue.com/mpvue/quickstart/)
