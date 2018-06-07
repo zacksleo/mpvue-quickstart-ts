@@ -4,7 +4,6 @@
 
 ```
 vue init zacksleo/mpvue-quickstart-ts my-project
-
 ```
 
 ## 特性
