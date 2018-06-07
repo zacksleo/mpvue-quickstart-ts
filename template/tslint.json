@@ -2,38 +2,76 @@
   "extends": "tslint:recommended",
   "rulesDirectory": [],
   "rules": {
-    "quotemark": [true, "single", "jsx-single"],
-    "semicolon": [true, "always"],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-single"
+    ],
+    "indent": [
+      true
+    ],
+    "semicolon": [
+      true,
+      "always"
+    ],
     "member-access": false,
-    "member-ordering": false,
+    "member-ordering": true,
     "new-parens": true,
     "no-arg": true,
     "no-bitwise": true,
     "no-reference": false,
     "no-conditional-assignment": true,
     "no-empty-interface": false,
-    "interface-name": [false],
+    "interface-name": [
+      false
+    ],
     "no-var-requires": false,
     "no-debugger": false,
-    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case", "allow-leading-underscore"],
+    "no-shadowed-variable": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case",
+      "allow-leading-underscore"
+    ],
     "no-unused-variable": true,
     "no-unused-expression": true,
     "no-var-keyword": true,
     "prefer-for-of": false,
-
-    "no-console": [false],
-    "prefer-const": [false],
-    "max-line-length": [false],
+    "no-console": [
+      false
+    ],
+    "prefer-const": [
+      true
+    ],
+    "max-line-length": [
+      false
+    ],
     "object-literal-sort-keys": false,
-    "max-classes-per-file": [false],
-
-    "curly": false,
-    "no-empty": false,
-    "arrow-parens": [false],
-    "ban-types": [false],
-    "ordered-imports": [false],
-    "trailing-comma": [false],
-    "only-arrow-functions": [false],
-    "no-consecutive-blank-lines": [true, 2]
+    "max-classes-per-file": [
+      false
+    ],
+    "curly": true,
+    "no-empty": true,
+    "arrow-parens": [
+      false
+    ],
+    "ban-types": [
+      false
+    ],
+    "ordered-imports": [
+      true
+    ],
+    "trailing-comma": [
+      true
+    ],
+    "only-arrow-functions": [
+      false
+    ],
+    "no-consecutive-blank-lines": [
+      true,
+      2
+    ]
   }
 }
